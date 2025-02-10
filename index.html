@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Meu Portfólio - Online</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="bemvindo">Seja Bem vindo!</h1>
+        <p class="p1">Um pouco sobre mim:</p>
+    </header>
+
+    <nav class="nav-container">
+        <button>
+            <a href="#sobre-mim" class="button"><span class="fonte">Sobre</span></a>
+        </button>
+        <button>
+            <a href="#conhecimentos" class="button"><span class="fonte">Habilidades</span></a>
+        </button>
+        <button>
+            <a href="#objetivos" class="button"><span class="fonte">Metas</span></a>
+        </button>
+        <button>
+            <a href="#curriculo" class="button"><span class="fonte">Currículo</span></a>
+        </button>
+    </nav>
+
+    <div class="div-container">
+        <div class="div-empresas">
+            <p class="empresas">Empresas que já atuei:</p>
+        </div>
+        <div class="empresas-container">
+            <div class="card" onclick="window.location.href='https://cspautomacao.com.br';">
+                <div class="image-container">
+                    <img src="imgs/CSP-Logo.png" class="images-empresasCSP">
+                </div>
+                <div class="span-container">
+                    <span>Suporte Técnico</span>
+
+                    <span class="span-1">Fev de 2021 - Jun de 2022</span>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='https://www.unimed.coop.br/site/web/chapeco';">
+                <div class="image-container">
+                    <img src="imgs/Unimed-Logo.png" class="images-empresasUNIMED">
+                </div>
+                <div class="span-container">
+                    <span>Aprendiz TI</span>
+
+                    <span class="span-2">Ago de 2022 - Ago de 2023</span>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='https://grupoeko7.com.br';">
+                <div class="image-container">
+                    <img src="imgs/GrupoEko7-Logo.png" class="images-empresasEKO7">
+                </div>
+                <div class="span-container">
+                    <span>Auxiliar de Ti</span>
+
+                    <span class="span-3">Out de 2023 - Out de 2024</span>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='https://www2.visionsystem.com.br/';">
+                <div class="image-containerVISION">
+                    <img src="imgs/visionsystem.png" class="images-empresasVISION">
+                </div>
+                <div class="span-container">
+                    <span>Assistente de Apoio a Programação de Sistemas</span>
+
+                    <span class="span-2">Out de 2024 - Fev de 2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p class="topicos">Tópicos:</p>
+    </div>
+    <div class="div-section">
+        <section id="sobre-mim">
+            <h2 style="font-family: 'DMSerif';">Quem Sou:</h2>
+            <p>Olá, Meu nome é Gabriel F. Korb,
+                Atualmente com 19 anos, sou um entusiasta de tecnologia, desenvolvimento e do mundo digital. Desde a
+                infância, mantenho uma profunda fascinação pelo potencial transformador que a tecnologia proporciona, o
+                que me levou a explorar diversas áreas, como desenvolvimento de software/web, manutenção de
+                computadores, jogos, artes digitais e tecnologia em geral. Dedico-me constantemente à aquisição de novas
+                habilidades, sempre buscando inovações que possam gerar um impacto positivo na vida das pessoas.</p>
+        </section>
+
+        <section id="conhecimentos">
+            <h2 style="font-family: 'DMSerif';">Meus Conhecimentos</h2>
+            <ul>
+                <li>Desenvolvimento (HTML, CSS, JavaScript, PHP, Angular, Node JS, Angular, TypeScript, Python e C#)
+                </li>
+                <li>Bancos de Dados (MySQL, Oracle, Firebird)</li>
+                <li>Montagem/Manutenção de computadores</li>
+                <li>Formatação e configuração de computadores</li>
+                <li>Infraestrutura de Rede</li>
+                <li>Photoshop - Conhecimento intermediário (Design)</li>
+                <li>Pacote Office Intermediário</li>
+                <li>DevOps e Automação: Tenho interesse em práticas de DevOps e na criação de automações que visam
+                    otimizar e agilizar processos, tanto pessoais quanto de terceiros.</li>
+            </ul>
+        </section>
+
+        <section id="objetivos">
+            <h2 style="font-family: 'DMSerif';">Objetivos:</h2>
+            <p>Meu objetivo é crescer profissionalmente e ser reconhecido pelos conhecimentos que adquiri ao longo da
+                minha jornada. Tenho um forte desejo de ajudar, colaborar e contribuir, tanto para a felicidade das
+                pessoas quanto para o sucesso de uma empresa. Além disso, busco me destacar no mundo da tecnologia,
+                mantendo-me sempre atualizado sobre as últimas tendências e inovações. Acredito que, ao aperfeiçoar
+                continuamente minhas habilidades, poderei fazer uma diferença significativa e impactar positivamente
+                aqueles ao meu redor.</p>
+        </section>
+
+        <section id="curriculo">
+            <h2 style="font-family: 'DMSerif';">Currículo</h2>
+            <div class="curriculo-link">
+                <p>Ao clicar no botão abaixo, Você irá fazer o download automaticamente do meu currículo.</p>
+                <a href="https://raw.githubusercontent.com/korbeee/gabrekorb.github.io/main/documents/curriculo-gabrielkorb.pdf"
+                    download="curriculo-gabrielkorb.pdf" class="Btn">
+                    <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                        </path>
+                    </svg>
+                    <span class="icon2"></span>
+                    <span class="tooltip">curriculo-gabrielkorb.pdf</span>
+                </a>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
