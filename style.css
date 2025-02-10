@@ -77,64 +77,72 @@ header {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.images-empresasCSP{
+
+.images-empresasCSP {
     width: 100px;
     height: auto;
     margin-bottom: 10px;
 }
-.images-empresasUNIMED{
+
+.images-empresasUNIMED {
     width: 100px;
     height: auto;
     margin-bottom: 10px;
 }
-.images-empresasEKO7{
+
+.images-empresasEKO7 {
     width: 150px;
     height: auto;
     margin-bottom: 10px;
 }
-.images-empresasVISION{
+
+.images-empresasVISION {
     width: 150px;
     height: auto;
     margin-bottom: 10px;
 }
-.span-container{
-    display: grid;
-    margin-bottom: -10%;
+
+.span-1 {
+    color: #727272;
 }
-.span-1{
-    color:#727272;
+
+.span-2 {
+    color: #727272;
 }
-.span-2{
-    color:#727272;
+
+.span-3 {
+    color: #727272;
 }
-.span-3{
-    color:#727272;
+
+.span-4 {
+    color: #727272;
 }
-.span-4{
-    color:#727272;
-}
-.nav-container{
+
+.nav-container {
     display: flex;
     align-self: center;
     justify-content: center;
 }
+
 button {
     background: none;
     border: none;
     background-color: none;
 
 }
+
 .fonte {
     font-size: 15px;
     color: #494949;
 }
+
 .button {
     background: none;
     background-color: #cacaca;
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center; 
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -151,6 +159,7 @@ button {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
 }
+
 section {
     max-width: 900px;
     margin: 70px auto;
@@ -190,6 +199,43 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.span-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.span-container2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.span-container .span-1 {
+    font-size: 10px;
+}
+.span-container .span-1-title {
+    font-weight: bold;
+}
+.span-container .span-2 {
+    font-size: 10px;
+}
+.span-container .span-2-title {
+    font-weight: bold;
+}
+.span-container .span-3 {
+    font-size: 10px;
+}
+.span-container .span-3-title {
+    font-weight: bold;
+}
+.span-container2 .span-4 {
+    font-size: 10px;
+}
+.span-container2 .span-4-title {
+    font-weight: bold;
+}
+
 
 .div-section {
     display: flex;
@@ -309,15 +355,18 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .card {
         width: 90%;
     }
-    .button{
+
+    .button {
         width: 10px;
         max-width: 10px;
         min-width: 10px;
         height: 10px;
     }
+
     .fonte {
         display: flex;
         align-items: center;
@@ -325,6 +374,7 @@ footer {
         font-size: 10px;
         color: #494949;
     }
+
     .div-section>section {
         flex: 0 1 calc(100% - 20px);
     }
