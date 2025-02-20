@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Meu Portfólio - Certificados</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="certificados">Certificados</h1>
+    </header>
+    <div class="container">
+        <div class="title-certificados"><a href="https://portal.sc.senac.br/">Instituição: Senac</a></div>
+        <div class="certificado">
+            <img src="../imgs/certificado1.png" class="certificado" alt="Certificado 1">
+            <div class="buttons-container">
+                <button class="button" onclick="downloadImage('../imgs/certificado1.png')">
+                    <i class="fas fa-download"></i>
+                </button>
+                <button class="button" onclick="openFullScreen('../imgs/certificado1.png')">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="title-certificados"><a href="https://www.cebrac.com.br/">Instituição: Cebrac</a></div>
+        <div class="certificado">
+            <img src="../imgs/certificado2.png" class="certificado" alt="Certificado 2">
+            <div class="buttons-container">
+                <button class="button" onclick="downloadImage('../imgs/certificado2.png')">
+                    <i class="fas fa-download"></i>
+                </button>
+                <button class="button" onclick="openFullScreen('../imgs/certificado2.png')">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="title-certificados"><a href="https://www.cebrac.com.br/">Instituição: Cebrac</a></div>
+        <div class="certificado">
+            <img src="../imgs/certificado3.png" class="certificado" alt="Certificado 3">
+            <div class="buttons-container">
+                <button class="button" onclick="downloadImage('../imgs/certificado3.png')">
+                    <i class="fas fa-download"></i>
+                </button>
+                <button class="button" onclick="openFullScreen('../imgs/certificado3.png')">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function downloadImage(imageSrc) {
+            const link = document.createElement('a');
+            link.href = imageSrc;
+            link.download = imageSrc.split('/').pop();
+            link.click();
+        }
+        function openFullScreen(imageSrc) {
+            const imgWindow = window.open('', '_blank');
+            imgWindow.document.write('<img src="' + imageSrc + '" style="width:100%; height:auto;">');
+        }
+    </script>
+</body>
+
+</html>
