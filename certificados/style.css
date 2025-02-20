@@ -26,14 +26,140 @@ body {
     align-items: center;
 }
 
-.title-certificados{
+.button-house {
+    position: absolute;
+    top: 5%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.tooltiptext-inicio {
+    visibility: hidden;
+    width: 150px;
+    background-color: #251f17;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: 350%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltiptext-inicio::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 0;
+    margin-left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #251f17 transparent transparent;
+}
+.button-house:hover .tooltiptext-inicio {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.tooltiptext-download {
+    visibility: hidden;
+    width: 150px;
+    background-color: #544634;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 3px;
+    left: 400%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.tooltiptext-download::after {
+    content: "";
+    position: absolute;
+    top: 32%;
+    left: 0;
+    margin-left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #544634 transparent transparent;
+}
+
+
+
+.button:hover .tooltiptext-download{
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.tooltiptext-telacheia {
+    visibility: hidden;
+    width: 150px;
+    background-color: #544634;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 400%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.tooltiptext-telacheia::after {
+    content: "";
+    position: absolute;
+    top: 32%;
+    left: 0;
+    margin-left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #544634 transparent transparent;
+}
+
+
+
+.button:hover .tooltiptext-telacheia{
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.button-house i {
+    margin-right: 8px;
+    color: white;
+}
+
+i {
+    color: white;
+}
+
+
+.title-certificados {
     margin-bottom: -15%;
 }
-a{
+
+a {
     color: #544634;
     font-weight: bolder;
     text-decoration: none;
 }
+
 .container {
     margin-top: 5%;
     display: flex;
@@ -103,15 +229,17 @@ button:hover {
     }
 }
 
-@media (max-width: 1180px){
+@media (max-width: 1180px) {
     header {
         margin-top: -20px;
     }
 }
+
 @media (max-width: 768px) {
     header {
         margin-top: -20px;
     }
+
     .container {
         margin-top: 3%;
     }
