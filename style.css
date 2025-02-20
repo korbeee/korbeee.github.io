@@ -360,16 +360,14 @@ footer {
 }
 
 .tooltip::before {
-    position: absolute;
     content: "";
-    width: 10px;
-    height: 10px;
-    background-color: #352c20;
-    background-size: 1000%;
-    background-position: center;
-    transform: rotate(45deg);
-    left: -6%;
-    transition-duration: .3s;
+    position: absolute;
+    top: 33%;
+    left: 0;
+    margin-left: -9px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #544634 transparent transparent;
 }
 
 .Btn:hover .tooltip {
