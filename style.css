@@ -156,7 +156,11 @@ header {
     height: auto;
     margin-bottom: 10px;
 }
-
+.images-empresasVISION {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
 .span-1 {
     color: #2e2e2e;
 }
