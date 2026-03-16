@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio digital - Gabriel F. Korb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imgs/logo-sem-f.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- NAV -->
+    <nav>
+
+        <div class="nav-brand">
+            <a href="#">
+                <img src="imgs/logo-sem-f.png" alt="Logo Gabriel Korb">
+                <span class="nav-logo">Gabriel F. Korb</span>
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#certificados">Certificados</a></li>
+        </ul>
+
+        <a href="#contato" class="nav-cta">Contato →</a>
+
+    </nav>
+
+
+
+    <!-- SOBRE -->
+    <section class="about" id="sobre">
+        <div class="section-label">Sobre</div>
+        <div class="about-grid">
+            <div>
+                <h2 class="about-title">
+                    Desenvolvedor com<br>
+                    olhar de <em>designer.</em>
+                </h2>
+                <p class="about-text">
+                    Sou Gabriel Korb, desenvolvedor focado em sistemas web e aplicativos. Minha combinação única de
+                    habilidades técnicas e sensibilidade visual me permite criar interfaces que não apenas funcionam —
+                    mas que as pessoas realmente gostam de usar.
+                </p>
+                <p class="about-text">
+                    Trabalho com Angular, Node.js, PHP e bancos de dados, sempre com atenção ao detalhe da experiência
+                    do usuário final. Cada linha de código reflete uma decisão de design intencional.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">+5</div>
+                        <div class="stat-label">Anos de experiência em técnologia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Graduação em andamento</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Certificações técnicas completas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">+6</div>
+                        <div class="stat-label">Tecnologias dominadas</div>
+                    </div>
+                </div>
+                <div class="skills-grid" style="margin-top: 2.5rem;">
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">APIs REST</span>
+                    <span class="skill-tag">C / C#</span>
+                    <span class="skill-tag">UX/UI</span>
+                    <span class="skill-tag">Prototyping</span>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="photo-container">
+                    <img src="imgs/perfil.jpeg" alt="Foto de Gabriel Korb" class="profile-photo">
+                    <div class="photo-frame"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJETOS -->
+    <section class="projects" id="projetos">
+        <div class="projects-header">
+            <div>
+                <div class="section-label">Projetos</div>
+                <h2 class="projects-title">
+                    Trabalhos<br>
+                    <em>selecionados.</em>
+                </h2>
+            </div>
+        </div>
+        <div class="projects-grid">
+
+            <!-- Destaque -->
+            <div class="project-card reveal">
+                <div class="project-visual" style="background: #f0efe9;">
+                    <div class="project-visual-inner" style="background: #e4e3dc;">
+                        <div class="project-icon"><i class="agenda-icon ph ph-calendar"></i></div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tag">Interface · Agenda · Produtividade</div>
+                    <div class="project-name">Agenda estilo Google Calendar</div>
+                    <div class="project-desc">Sistema de agenda interativa com visualizações diária, semanal e mensal.
+                        Interface responsiva construída do zero com foco em usabilidade e feedback visual imediato.
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <div class="project-techs">
+                        <span class="tech-pill">PHP</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">Tailwind</span>
+                    </div>
+                    <a href="https://opa-schedule.com.br" target="_blank" rel="noopener" class="project-arrow">
+                        →
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card reveal" style="transition-delay: 0.1s;">
+                <div class="project-visual" style="background: #f0efe9;">
+                    <div class="project-visual-inner" style="background: #e4e3dc;">
+                        <div class="project-icon"><i class="ph ph-device-mobile"></i></div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tag">Aplicativo · Rastreamento</div>
+                    <div class="project-name">Aplicativo de rastreamento</div>
+                    <div class="project-desc">Aplicativo de rastreamento de protudos da empresa Eko'7 entre outras
+                        funcionalidades mais voltadas ao cliente</div>
+                </div>
+                <div class="project-footer">
+                    <div class="project-techs">
+                        <span class="tech-pill">Node.js</span>
+                        <span class="tech-pill">PHP</span>
+                        <span class="tech-pill">Angular</span>
+                        <span class="tech-pill">TypeScript</span>
+                    </div>
+                    <a href="https://github.com/korbeee/group-7" target="_blank" rel="noopener" class="project-arrow">
+                        →
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card reveal" style="transition-delay: 0.15s;">
+                <div class="project-visual" style="background: #f5f0e8;">
+                    <div class="project-visual-inner" style="background: #ece7df;">
+                        <div class="project-icon"><i class="ph ph-tree-structure"></i></div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tag">Interface · Repositório · Produtividade</div>
+                    <div class="project-name">Sistema de repostiório para json</div>
+                    <div class="project-desc">Ferramenta para automatizar fluxos e processos internos via integração de
+                        APIs externas.</div>
+                </div>
+                <div class="project-footer">
+                    <div class="project-techs">
+                        <span class="tech-pill">Node.js</span>
+                        <span class="tech-pill">PHP</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">Tailwind</span>
+                        <span class="tech-pill">APIs</span>
+                    </div>
+                    <a href="https://opa-flowslibrary.com.br" target="_blank" rel="noopener" class="project-arrow">
+                        →
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card-2 reveal">
+                <div class="project-visual" style="background: #f0efe9;">
+                    <div class="project-visual-inner" style="background: #e4e3dc;">
+                        <div class="project-icon"><i class="ph ph-cloud"></i></div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tag">Interface · Resíduos · Sistema de gestão</div>
+                    <div class="project-name">Sistema de gestão de resíduos - Cloud</div>
+                    <div class="project-desc">Participei de um projeto de um sistema chamado "Cloud" onde o intúito é
+                        fazer a gestão de resíudos através de rastreamento entre outras funções mais.
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <div class="project-techs">
+                        <span class="tech-pill">PHP</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">Tailwind</span>
+                    </div>
+                    <a href="https://opa-schedule.com.br" target="_blank" rel="noopener" class="project-arrow">
+                        →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="experience" id="experiencia">
+        <div class="section-label">Experiência</div>
+        <h2 class="exp-title">Experiência profissional<br><em>na prática.</em></h2>
+
+        <div class="exp-list">
+
+            <div class="exp-item reveal">
+                <div class="exp-company">IXC Soft</div>
+
+                <div>
+                    <div class="exp-role">Suporte Técnico — Opa! Suite</div>
+
+                    <div class="exp-desc">
+                        Atendimento técnico especializado para clientes Opa! Suite,
+                        auxiliando na identificação e resolução de problemas em sitema Omnichannel.
+                        <br>
+                        <br>
+                        Atuação na análise de erros, diagnóstico de falhas operacionais e
+                        melhoria contínua dos fluxos de suporte através de documentação e
+                        otimização de processos.
+                    </div>
+                </div>
+
+                <div class="exp-year">2025 — Atual</div>
+            </div>
+
+
+            <div class="exp-item reveal">
+                <div class="exp-company">Vision System</div>
+
+                <div>
+                    <div class="exp-role">Assistente de Apoio à Programação</div>
+
+                    <div class="exp-desc">
+                        Participação no desenvolvimento e manutenção de sistemas de gestão chamdo Cloud,
+                        voltados ao controle de resíduos e processos ambientais.
+                        <br>
+                        <br>
+                        Apoio à equipe de desenvolvimento na implementação de funcionalidades,
+                        testes e melhorias em aplicações corporativas.
+                    </div>
+                </div>
+
+                <div class="exp-year">2024</div>
+            </div>
+
+
+            <div class="exp-item reveal">
+                <div class="exp-company">Grupo Eko'7</div>
+
+                <div>
+                    <div class="exp-role">Auxiliar de TI</div>
+
+                    <div class="exp-desc">
+                        Atuação em suporte técnico e infraestrutura de TI dentro do ambiente industrial,
+                        realizando manutenção de computadores, diagnóstico de falhas em equipamentos e
+                        suporte à rede interna e sistemas utilizados na fábrica.<br>
+                        <br>
+                        Suporte técnico a usuários e clientes em relação ao uso de sistema
+                        da empresa. Atuação no diagnóstico de problemas,
+                        orientação de usuários e acompanhamento.
+                    </div>
+                </div>
+
+                <div class="exp-year">2023 — 2024</div>
+            </div>
+
+
+            <div class="exp-item reveal">
+                <div class="exp-company">Unimed</div>
+
+                <div>
+                    <div class="exp-role">Aprendiz de TI</div>
+
+                    <div class="exp-desc">
+                        Suporte à infraestrutura interna de tecnologia da informação,
+                        auxiliando na manutenção de sistemas, equipamentos e ambientes
+                        corporativos.
+                        <br>
+                        <br>
+                        Experiência inicial com rotinas de TI empresarial.
+                    </div>
+                </div>
+
+                <div class="exp-year">2022 — 2023</div>
+            </div>
+
+
+            <div class="exp-item reveal">
+                <div class="exp-company">CSP Automação</div>
+
+                <div>
+                    <div class="exp-role">Auxiliar de TI / Suporte Técnico</div>
+
+                    <div class="exp-desc">
+                        Atuação em suporte técnico e infraestrutura de TI em ambiente corporativo,
+                        realizando manutenção de computadores, diagnóstico de falhas em equipamentos
+                        e suporte à rede interna, garantindo o funcionamento adequado dos sistemas
+                        utilizados nas operações da empresa.
+                        <br>
+                        --
+                        <br>
+                        Suporte técnico a clientes na utilização de sistemas de automação e gestão empresarial.
+                        Atuação no apoio à geração e validação de arquivos fiscais, orientação de usuários
+                        quanto à usabilidade do sistema e resolução de dúvidas operacionais.
+
+                        Também realizava análises e ajustes pontuais em banco de dados Firebird para correção
+                        de inconsistências e suporte a processos internos do sistema.
+                    </div>
+                </div>
+
+                <div class="exp-year">2021 — 2022</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CERTIFICADOS -->
+    <section class="certs" id="certificados">
+        <div class="section-label">Certificados</div>
+        <h2 class="about-title" style="margin-bottom: 1rem;">Credenciais<br><em>formais.</em></h2>
+        <p class="about-text" style="max-width: 500px; margin-bottom: 0;">Certificações que validam meu conhecimento
+            técnico em plataformas e práticas do mercado.</p>
+        <div class="certs-grid" style="margin-top: 3rem;">
+            <div class="cert-card reveal">
+                <div class="cert-icon"><i class="ph ph-highlighter"></i></div>
+                <div class="cert-name">Design</div>
+                <div class="cert-issuer">Unochapecó · 2025 - Atual</div>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-icon"><i class="ph ph-dev-to-logo"></i></div>
+                <div class="cert-name">Aprendizagem Profissional de Qualificação em Desenvolvimento de Softwares</div>
+                <div class="cert-issuer">Senac · 2022 - 2023</div>
+            </div>
+            <div class="cert-card reveal" style="transition-delay: 0.1s;">
+                <div class="cert-icon"><i class="ph ph-browser"></i></div>
+                <div class="cert-name">Gew - Geração WEB</div>
+                <div class="cert-issuer">Cebrac · 2019 - 2020</div>
+            </div>
+            <div class="cert-card reveal" style="transition-delay: 0.2s;">
+                <div class="cert-icon"><i class="ph ph-circuitry"></i></div>
+                <div class="cert-name">Hdw - Montagem e Manutenção</div>
+                <div class="cert-issuer">Cebrac · 2019</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+        <div class="contact-eyebrow">Contato</div>
+        <h2 class="contact-title">
+            Vamos criar algo<br>
+            <em>incrível juntos?</em>
+        </h2>
+        <div class="contact-links">
+            <a href="mailto:gabrielkorb2004@gmail.com" class="btn-primary">Enviar e-mail →</a>
+            <a href="https://www.linkedin.com/in/gabriel-korb-57260434a/" class="btn-ghost" target="_blank">LinkedIn
+                ↗</a>
+            <a href="https://github.com/korbeee/" class="btn-ghost" target="_blank">GitHub ↗</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <span>© 2026 Gabriel F. Korb</span>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/gabriel-korb-57260434a/">LinkedIn</a>
+            <a href="https://github.com/korbeee/">GitHub</a>
+            <a href="documents/curriculo-gabrielkorb.pdf">CV em PDF</a>
+        </div>
+        <span>Chapecó, Brasil</span>
+    </footer>
+
+    <script>
+        // CURSOR
+        const cursor = document.getElementById('cursor');
+        const ring = document.getElementById('cursor-ring');
+        let mx = 0, my = 0, rx = 0, ry = 0;
+
+        const darkSections = document.querySelectorAll('.experience, footer');
+
+        function updateCursorColor() {
+            let el = document.elementFromPoint(mx, my);
+            if (!el) return;
+
+            // Caso esteja sobre uma imagem
+            if (el.tagName === 'IMG') {
+                cursor.style.background = '#fafafa';
+                ring.style.borderColor = 'rgba(250,250,250,0.35)';
+                return;
+            }
+
+            // sobe até achar fundo real
+            while (el && window.getComputedStyle(el).backgroundColor === 'rgba(0, 0, 0, 0)') {
+                el = el.parentElement;
+            }
+
+            if (!el) return;
+
+            const bg = window.getComputedStyle(el).backgroundColor;
+            const rgb = bg.match(/\d+/g);
+            if (!rgb) return;
+
+            const r = +rgb[0];
+            const g = +rgb[1];
+            const b = +rgb[2];
+
+            const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+            const onDark = brightness < 128;
+
+            cursor.style.background = onDark ? '#fafafa' : '#0a0a0a';
+            ring.style.borderColor = onDark
+                ? 'rgba(250,250,250,0.35)'
+                : 'rgba(10,10,10,0.3)';
+        }
+
+        document.addEventListener('mousemove', e => {
+            mx = e.clientX; my = e.clientY;
+            cursor.style.left = mx + 'px';
+            cursor.style.top = my + 'px';
+            updateCursorColor();
+        });
+
+        function animRing() {
+            rx += (mx - rx) * 0.14;
+            ry += (my - ry) * 0.14;
+            ring.style.left = rx + 'px';
+            ring.style.top = ry + 'px';
+            requestAnimationFrame(animRing);
+        }
+        animRing();
+
+        // SCROLL REVEAL
+        const reveals = document.querySelectorAll('.reveal');
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach((e, i) => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    obs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        reveals.forEach(el => obs.observe(el));
+
+        // NAV SCROLL
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            nav.style.borderBottomColor = window.scrollY > 40 ? 'rgba(0,0,0,0.1)' : 'rgba(0,0,0,0.06)';
+        });
+    </script>
+
+</body>
+
+</html>
