@@ -29,13 +29,46 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#experiencia">Experiência</a></li>
-            <li><a href="#certificados">Certificados</a></li>
+            <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+            <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+            <li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
+            <li><a href="#certificados" data-i18n="nav.certs">Certificados</a></li>
         </ul>
 
-        <a href="#contato" class="nav-cta">Contato →</a>
+        <div class="nav-right">
+            <!-- Language Selector -->
+            <div class="lang-selector" id="langSelector">
+                <button class="lang-current" id="langBtn" aria-label="Select language">
+                    <span class="lang-flag" id="currentFlag">🇧🇷</span>
+                    <span class="lang-code" id="currentCode">PT</span>
+                    <i class="ph ph-caret-down lang-caret" id="langCaret"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-option active" data-lang="pt">
+                        <span class="lang-flag">🇧🇷</span>
+                        <span class="lang-name">Português</span>
+                        <span class="lang-abbr">PT</span>
+                    </button>
+                    <button class="lang-option" data-lang="en">
+                        <span class="lang-flag">🇺🇸</span>
+                        <span class="lang-name">English</span>
+                        <span class="lang-abbr">EN</span>
+                    </button>
+                    <button class="lang-option" data-lang="es">
+                        <span class="lang-flag">🇪🇸</span>
+                        <span class="lang-name">Español</span>
+                        <span class="lang-abbr">ES</span>
+                    </button>
+                    <button class="lang-option" data-lang="zh">
+                        <span class="lang-flag">🇨🇳</span>
+                        <span class="lang-name">中文</span>
+                        <span class="lang-abbr">ZH</span>
+                    </button>
+                </div>
+            </div>
+
+            <a href="#contato" class="nav-cta" data-i18n="nav.contact">Contato →</a>
+        </div>
 
     </nav>
 
@@ -43,38 +76,38 @@
 
     <!-- SOBRE -->
     <section class="about" id="sobre">
-        <div class="section-label">Sobre</div>
+        <div class="section-label" data-i18n="nav.about">Sobre</div>
         <div class="about-grid">
             <div>
-                <h2 class="about-title">
+                <h2 class="about-title" data-i18n-html="about.title">
                     Desenvolvedor com<br>
                     olhar de <em>designer.</em>
                 </h2>
-                <p class="about-text">
+                <p class="about-text" data-i18n="about.p1">
                     Sou Gabriel Korb, desenvolvedor focado em sistemas web e aplicativos. Minha combinação única de
                     habilidades técnicas e sensibilidade visual me permite criar interfaces que não apenas funcionam —
                     mas que as pessoas realmente gostam de usar.
                 </p>
-                <p class="about-text">
+                <p class="about-text" data-i18n="about.p2">
                     Trabalho com Angular, Node.js, PHP e bancos de dados, sempre com atenção ao detalhe da experiência
                     do usuário final. Cada linha de código reflete uma decisão de design intencional.
                 </p>
                 <div class="about-stats">
                     <div class="stat-item">
                         <div class="stat-number">+5</div>
-                        <div class="stat-label">Anos de experiência em técnologia</div>
+                        <div class="stat-label" data-i18n="about.stat1">Anos de experiência em técnologia</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">1</div>
-                        <div class="stat-label">Graduação em andamento</div>
+                        <div class="stat-label" data-i18n="about.stat2">Graduação em andamento</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">3</div>
-                        <div class="stat-label">Certificações técnicas completas</div>
+                        <div class="stat-label" data-i18n="about.stat3">Certificações técnicas completas</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">+6</div>
-                        <div class="stat-label">Tecnologias dominadas</div>
+                        <div class="stat-label" data-i18n="about.stat4">Tecnologias dominadas</div>
                     </div>
                 </div>
                 <div class="skills-grid" style="margin-top: 2.5rem;">
@@ -106,8 +139,8 @@
     <section class="projects" id="projetos">
         <div class="projects-header">
             <div>
-                <div class="section-label">Projetos</div>
-                <h2 class="projects-title">
+                <div class="section-label" data-i18n="nav.projects">Projetos</div>
+                <h2 class="projects-title" data-i18n-html="projects.title">
                     Trabalhos<br>
                     <em>selecionados.</em>
                 </h2>
@@ -115,7 +148,6 @@
         </div>
         <div class="projects-grid">
 
-            <!-- Destaque -->
             <div class="project-card reveal">
                 <div class="project-visual" style="background: #f0efe9;">
                     <div class="project-visual-inner" style="background: #e4e3dc;">
@@ -123,9 +155,9 @@
                     </div>
                 </div>
                 <div class="project-body">
-                    <div class="project-tag">Interface · Agenda · Produtividade</div>
-                    <div class="project-name">Agenda estilo Google Calendar</div>
-                    <div class="project-desc">Sistema de agenda interativa com visualizações diária, semanal e mensal.
+                    <div class="project-tag" data-i18n="proj1.tag">Interface · Agenda · Produtividade</div>
+                    <div class="project-name" data-i18n="proj1.name">Agenda estilo Google Calendar</div>
+                    <div class="project-desc" data-i18n="proj1.desc">Sistema de agenda interativa com visualizações diária, semanal e mensal.
                         Interface responsiva construída do zero com foco em usabilidade e feedback visual imediato.
                     </div>
                 </div>
@@ -135,9 +167,7 @@
                         <span class="tech-pill">JavaScript</span>
                         <span class="tech-pill">Tailwind</span>
                     </div>
-                    <a href="https://opa-schedule.com.br" target="_blank" rel="noopener" class="project-arrow">
-                        →
-                    </a>
+                    <a href="https://opa-schedule.com.br" target="_blank" rel="noopener" class="project-arrow">→</a>
                 </div>
             </div>
 
@@ -148,9 +178,9 @@
                     </div>
                 </div>
                 <div class="project-body">
-                    <div class="project-tag">Aplicativo · Rastreamento</div>
-                    <div class="project-name">Aplicativo de rastreamento</div>
-                    <div class="project-desc">Aplicativo de rastreamento de protudos da empresa Eko'7 entre outras
+                    <div class="project-tag" data-i18n="proj2.tag">Aplicativo · Rastreamento</div>
+                    <div class="project-name" data-i18n="proj2.name">Aplicativo de rastreamento</div>
+                    <div class="project-desc" data-i18n="proj2.desc">Aplicativo de rastreamento de produtos da empresa Eko'7 entre outras
                         funcionalidades mais voltadas ao cliente</div>
                 </div>
                 <div class="project-footer">
@@ -160,7 +190,7 @@
                         <span class="tech-pill">Angular</span>
                         <span class="tech-pill">TypeScript</span>
                     </div>
-                    <span class="project-locked" data-tip="Não disponível para visualização">
+                    <span class="project-locked" data-i18n-tip="locked.tip" data-tip="Não disponível para visualização">
                         <i class="ph ph-lock-simple"></i>
                     </span>
                 </div>
@@ -173,9 +203,9 @@
                     </div>
                 </div>
                 <div class="project-body">
-                    <div class="project-tag">Interface · Repositório · Produtividade</div>
-                    <div class="project-name">Sistema de repostiório para json</div>
-                    <div class="project-desc">Ferramenta para automatizar fluxos e processos internos via integração de
+                    <div class="project-tag" data-i18n="proj3.tag">Interface · Repositório · Produtividade</div>
+                    <div class="project-name" data-i18n="proj3.name">Sistema de repositório para json</div>
+                    <div class="project-desc" data-i18n="proj3.desc">Ferramenta para automatizar fluxos e processos internos via integração de
                         APIs externas.</div>
                 </div>
                 <div class="project-footer">
@@ -186,9 +216,7 @@
                         <span class="tech-pill">Tailwind</span>
                         <span class="tech-pill">APIs</span>
                     </div>
-                    <a href="https://opa-flowslibrary.com.br" target="_blank" rel="noopener" class="project-arrow">
-                        →
-                    </a>
+                    <a href="https://opa-flowslibrary.com.br" target="_blank" rel="noopener" class="project-arrow">→</a>
                 </div>
             </div>
 
@@ -199,10 +227,10 @@
                     </div>
                 </div>
                 <div class="project-body">
-                    <div class="project-tag">Interface · Resíduos · Sistema de gestão</div>
-                    <div class="project-name">Sistema de gestão de resíduos - Cloud</div>
-                    <div class="project-desc">Participei de um projeto de um sistema chamado "Cloud" onde o intúito é
-                        fazer a gestão de resíudos através de rastreamento entre outras funções mais.
+                    <div class="project-tag" data-i18n="proj4.tag">Interface · Resíduos · Sistema de gestão</div>
+                    <div class="project-name" data-i18n="proj4.name">Sistema de gestão de resíduos - Cloud</div>
+                    <div class="project-desc" data-i18n="proj4.desc">Participei de um projeto de um sistema chamado "Cloud" onde o intuito é
+                        fazer a gestão de resíduos através de rastreamento entre outras funções mais.
                     </div>
                 </div>
                 <div class="project-footer">
@@ -211,7 +239,7 @@
                         <span class="tech-pill">TypeScript</span>
                         <span class="tech-pill">Angular</span>
                     </div>
-                    <span class="project-locked" data-tip="Não disponível para visualização">
+                    <span class="project-locked" data-i18n-tip="locked.tip" data-tip="Não disponível para visualização">
                         <i class="ph ph-lock-simple"></i>
                     </span>
                 </div>
@@ -221,116 +249,90 @@
 
     <!-- EXPERIÊNCIA -->
     <section class="experience" id="experiencia">
-        <div class="section-label">Experiência</div>
-        <h2 class="exp-title">Experiência profissional<br><em>na prática.</em></h2>
+        <div class="section-label" data-i18n="nav.experience">Experiência</div>
+        <h2 class="exp-title" data-i18n-html="exp.title">Experiência profissional<br><em>na prática.</em></h2>
 
         <div class="exp-list">
 
             <div class="exp-item reveal">
                 <div class="exp-company">IXC Soft</div>
-
                 <div>
-                    <div class="exp-role">Suporte Técnico — Opa! Suite</div>
-
-                    <div class="exp-desc">
+                    <div class="exp-role" data-i18n="exp1.role">Suporte Técnico — Opa! Suite</div>
+                    <div class="exp-desc" data-i18n-html="exp1.desc">
                         Atendimento técnico especializado para clientes Opa! Suite,
-                        auxiliando na identificação e resolução de problemas em sitema Omnichannel.
-                        <br>
-                        <br>
+                        auxiliando na identificação e resolução de problemas em sistema Omnichannel.
+                        <br><br>
                         Atuação na análise de erros, diagnóstico de falhas operacionais e
                         melhoria contínua dos fluxos de suporte através de documentação e
                         otimização de processos.
                     </div>
                 </div>
-
-                <div class="exp-year">2025 — Atual</div>
+                <div class="exp-year">2025 — <span data-i18n="exp.current">Atual</span></div>
             </div>
-
 
             <div class="exp-item reveal">
                 <div class="exp-company">Vision System</div>
-
                 <div>
-                    <div class="exp-role">Assistente de Apoio à Programação</div>
-
-                    <div class="exp-desc">
-                        Participação no desenvolvimento e manutenção de sistemas de gestão chamdo Cloud,
+                    <div class="exp-role" data-i18n="exp2.role">Assistente de Apoio à Programação</div>
+                    <div class="exp-desc" data-i18n-html="exp2.desc">
+                        Participação no desenvolvimento e manutenção de sistemas de gestão chamado Cloud,
                         voltados ao controle de resíduos e processos ambientais.
-                        <br>
-                        <br>
+                        <br><br>
                         Apoio à equipe de desenvolvimento na implementação de funcionalidades,
                         testes e melhorias em aplicações corporativas.
                     </div>
                 </div>
-
-                <div class="exp-year">2024 - 2024</div>
+                <div class="exp-year">2024</div>
             </div>
-
 
             <div class="exp-item reveal">
                 <div class="exp-company">Grupo Eko'7</div>
-
                 <div>
-                    <div class="exp-role">Auxiliar de TI</div>
-
-                    <div class="exp-desc">
+                    <div class="exp-role" data-i18n="exp3.role">Auxiliar de TI</div>
+                    <div class="exp-desc" data-i18n-html="exp3.desc">
                         Atuação em suporte técnico e infraestrutura de TI dentro do ambiente industrial,
                         realizando manutenção de computadores, diagnóstico de falhas em equipamentos e
-                        suporte à rede interna e sistemas utilizados na fábrica.<br>
-                        <br>
+                        suporte à rede interna e sistemas utilizados na fábrica.<br><br>
                         Suporte técnico a usuários e clientes em relação ao uso de sistema
                         da empresa. Atuação no diagnóstico de problemas,
                         orientação de usuários e acompanhamento.
                     </div>
                 </div>
-
                 <div class="exp-year">2023 — 2024</div>
             </div>
 
-
             <div class="exp-item reveal">
                 <div class="exp-company">Unimed</div>
-
                 <div>
-                    <div class="exp-role">Aprendiz de TI</div>
-
-                    <div class="exp-desc">
+                    <div class="exp-role" data-i18n="exp4.role">Aprendiz de TI</div>
+                    <div class="exp-desc" data-i18n-html="exp4.desc">
                         Suporte à infraestrutura interna de tecnologia da informação,
                         auxiliando na manutenção de sistemas, equipamentos e ambientes
                         corporativos.
-                        <br>
-                        <br>
+                        <br><br>
                         Experiência inicial com rotinas de TI empresarial.
                     </div>
                 </div>
-
                 <div class="exp-year">2022 — 2023</div>
             </div>
 
-
             <div class="exp-item reveal">
                 <div class="exp-company">CSP Automação</div>
-
                 <div>
-                    <div class="exp-role">Auxiliar de TI / Suporte Técnico</div>
-
-                    <div class="exp-desc">
+                    <div class="exp-role" data-i18n="exp5.role">Auxiliar de TI / Suporte Técnico</div>
+                    <div class="exp-desc" data-i18n-html="exp5.desc">
                         Atuação em suporte técnico e infraestrutura de TI em ambiente corporativo,
                         realizando manutenção de computadores, diagnóstico de falhas em equipamentos
                         e suporte à rede interna, garantindo o funcionamento adequado dos sistemas
                         utilizados nas operações da empresa.
-                        <br>
-                        --
-                        <br>
+                        <br>--<br>
                         Suporte técnico a clientes na utilização de sistemas de automação e gestão empresarial.
                         Atuação no apoio à geração e validação de arquivos fiscais, orientação de usuários
                         quanto à usabilidade do sistema e resolução de dúvidas operacionais.
-
                         Também realizava análises e ajustes pontuais em banco de dados Firebird para correção
                         de inconsistências e suporte a processos internos do sistema.
                     </div>
                 </div>
-
                 <div class="exp-year">2021 — 2022</div>
             </div>
 
@@ -339,29 +341,29 @@
 
     <!-- CERTIFICADOS -->
     <section class="certs" id="certificados">
-        <div class="section-label">Certificados</div>
-        <h2 class="about-title" style="margin-bottom: 1rem;">Credenciais<br><em>formais.</em></h2>
-        <p class="about-text" style="max-width: 500px; margin-bottom: 0;">Certificações que validam meu conhecimento
+        <div class="section-label" data-i18n="nav.certs">Certificados</div>
+        <h2 class="about-title" style="margin-bottom: 1rem;" data-i18n-html="certs.title">Credenciais<br><em>formais.</em></h2>
+        <p class="about-text" style="max-width: 500px; margin-bottom: 0;" data-i18n="certs.desc">Certificações que validam meu conhecimento
             técnico em plataformas e práticas do mercado.</p>
         <div class="certs-grid" style="margin-top: 3rem;">
             <div class="cert-card reveal">
                 <div class="cert-icon"><i class="ph ph-highlighter"></i></div>
-                <div class="cert-name">Design</div>
-                <div class="cert-issuer">Unochapecó · 2025 - Atual</div>
+                <div class="cert-name" data-i18n="cert1.name">Design</div>
+                <div class="cert-issuer">Unochapecó · 2025 - <span data-i18n="exp.current">Atual</span></div>
             </div>
             <div class="cert-card reveal">
                 <div class="cert-icon"><i class="ph ph-dev-to-logo"></i></div>
-                <div class="cert-name">Aprendizagem Profissional de Qualificação em Desenvolvimento de Softwares</div>
+                <div class="cert-name" data-i18n="cert2.name">Aprendizagem Profissional de Qualificação em Desenvolvimento de Softwares</div>
                 <div class="cert-issuer">Senac · 2022 - 2023</div>
             </div>
             <div class="cert-card reveal" style="transition-delay: 0.1s;">
                 <div class="cert-icon"><i class="ph ph-browser"></i></div>
-                <div class="cert-name">Gew - Geração WEB</div>
+                <div class="cert-name" data-i18n="cert3.name">Gew - Geração WEB</div>
                 <div class="cert-issuer">Cebrac · 2019 - 2020</div>
             </div>
             <div class="cert-card reveal" style="transition-delay: 0.2s;">
                 <div class="cert-icon"><i class="ph ph-circuitry"></i></div>
-                <div class="cert-name">Hdw - Montagem e Manutenção</div>
+                <div class="cert-name" data-i18n="cert4.name">Hdw - Montagem e Manutenção</div>
                 <div class="cert-issuer">Cebrac · 2019</div>
             </div>
         </div>
@@ -369,15 +371,14 @@
 
     <!-- CONTATO -->
     <section class="contact" id="contato">
-        <div class="contact-eyebrow">Contato</div>
-        <h2 class="contact-title">
+        <div class="contact-eyebrow" data-i18n="nav.contact">Contato</div>
+        <h2 class="contact-title" data-i18n-html="contact.title">
             Vamos criar algo<br>
             <em>incrível juntos?</em>
         </h2>
         <div class="contact-links">
-            <a href="mailto:gabrielkorb2004@gmail.com" class="btn-primary">Enviar e-mail →</a>
-            <a href="https://www.linkedin.com/in/gabriel-korb-57260434a/" class="btn-ghost" target="_blank">LinkedIn
-                ↗</a>
+            <a href="mailto:gabrielkorb2004@gmail.com" class="btn-primary" data-i18n="contact.email">Enviar e-mail →</a>
+            <a href="https://www.linkedin.com/in/gabriel-korb-57260434a/" class="btn-ghost" target="_blank">LinkedIn ↗</a>
             <a href="https://github.com/korbeee/" class="btn-ghost" target="_blank">GitHub ↗</a>
         </div>
     </section>
@@ -388,87 +389,379 @@
         <div class="footer-links">
             <a href="https://www.linkedin.com/in/gabriel-korb-57260434a/">LinkedIn</a>
             <a href="https://github.com/korbeee/">GitHub</a>
-            <a href="documents/curriculo-gabrielkorb.pdf">CV em PDF</a>
+            <a href="documents/curriculo-gabrielkorb.pdf" data-i18n="footer.cv">CV em PDF</a>
         </div>
-        <span>Chapecó, Brasil</span>
+        <span data-i18n="footer.location">Chapecó, Brasil</span>
     </footer>
 
     <script>
-        // CURSOR
-        const cursor = document.getElementById('cursor');
-        const ring = document.getElementById('cursor-ring');
-        let mx = 0, my = 0, rx = 0, ry = 0;
-
-        const darkSections = document.querySelectorAll('.experience, footer');
-
-        function updateCursorColor() {
-            let el = document.elementFromPoint(mx, my);
-            if (!el) return;
-
-            // Caso esteja sobre uma imagem
-            if (el.tagName === 'IMG') {
-                cursor.style.background = '#fafafa';
-                ring.style.borderColor = 'rgba(250,250,250,0.35)';
-                return;
-            }
-
-            // sobe até achar fundo real
-            while (el && window.getComputedStyle(el).backgroundColor === 'rgba(0, 0, 0, 0)') {
-                el = el.parentElement;
-            }
-
-            if (!el) return;
-
-            const bg = window.getComputedStyle(el).backgroundColor;
-            const rgb = bg.match(/\d+/g);
-            if (!rgb) return;
-
-            const r = +rgb[0];
-            const g = +rgb[1];
-            const b = +rgb[2];
-
-            const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-            const onDark = brightness < 128;
-
-            cursor.style.background = onDark ? '#fafafa' : '#0a0a0a';
-            ring.style.borderColor = onDark
-                ? 'rgba(250,250,250,0.35)'
-                : 'rgba(10,10,10,0.3)';
+    // ─── TRANSLATIONS ────────────────────────────────────────────────────────────
+    const translations = {
+        pt: {
+            "nav.about": "Sobre",
+            "nav.projects": "Projetos",
+            "nav.experience": "Experiência",
+            "nav.certs": "Certificados",
+            "nav.contact": "Contato →",
+            "about.title": "Desenvolvedor com<br>olhar de <em>designer.</em>",
+            "about.p1": "Sou Gabriel Korb, desenvolvedor focado em sistemas web e aplicativos. Minha combinação única de habilidades técnicas e sensibilidade visual me permite criar interfaces que não apenas funcionam — mas que as pessoas realmente gostam de usar.",
+            "about.p2": "Trabalho com Angular, Node.js, PHP e bancos de dados, sempre com atenção ao detalhe da experiência do usuário final. Cada linha de código reflete uma decisão de design intencional.",
+            "about.stat1": "Anos de experiência em técnologia",
+            "about.stat2": "Graduação em andamento",
+            "about.stat3": "Certificações técnicas completas",
+            "about.stat4": "Tecnologias dominadas",
+            "projects.title": "Trabalhos<br><em>selecionados.</em>",
+            "proj1.tag": "Interface · Agenda · Produtividade",
+            "proj1.name": "Agenda estilo Google Calendar",
+            "proj1.desc": "Sistema de agenda interativa com visualizações diária, semanal e mensal. Interface responsiva construída do zero com foco em usabilidade e feedback visual imediato.",
+            "proj2.tag": "Aplicativo · Rastreamento",
+            "proj2.name": "Aplicativo de rastreamento",
+            "proj2.desc": "Aplicativo de rastreamento de produtos da empresa Eko'7 entre outras funcionalidades mais voltadas ao cliente",
+            "proj3.tag": "Interface · Repositório · Produtividade",
+            "proj3.name": "Sistema de repositório para json",
+            "proj3.desc": "Ferramenta para automatizar fluxos e processos internos via integração de APIs externas.",
+            "proj4.tag": "Interface · Resíduos · Sistema de gestão",
+            "proj4.name": "Sistema de gestão de resíduos - Cloud",
+            "proj4.desc": "Participei de um projeto de um sistema chamado \"Cloud\" onde o intuito é fazer a gestão de resíduos através de rastreamento entre outras funções mais.",
+            "locked.tip": "Não disponível para visualização",
+            "exp.title": "Experiência profissional<br><em>na prática.</em>",
+            "exp.current": "Atual",
+            "exp1.role": "Suporte Técnico — Opa! Suite",
+            "exp1.desc": "Atendimento técnico especializado para clientes Opa! Suite, auxiliando na identificação e resolução de problemas em sistema Omnichannel.<br><br>Atuação na análise de erros, diagnóstico de falhas operacionais e melhoria contínua dos fluxos de suporte através de documentação e otimização de processos.",
+            "exp2.role": "Assistente de Apoio à Programação",
+            "exp2.desc": "Participação no desenvolvimento e manutenção de sistemas de gestão chamado Cloud, voltados ao controle de resíduos e processos ambientais.<br><br>Apoio à equipe de desenvolvimento na implementação de funcionalidades, testes e melhorias em aplicações corporativas.",
+            "exp3.role": "Auxiliar de TI",
+            "exp3.desc": "Atuação em suporte técnico e infraestrutura de TI dentro do ambiente industrial, realizando manutenção de computadores, diagnóstico de falhas em equipamentos e suporte à rede interna e sistemas utilizados na fábrica.<br><br>Suporte técnico a usuários e clientes em relação ao uso de sistema da empresa. Atuação no diagnóstico de problemas, orientação de usuários e acompanhamento.",
+            "exp4.role": "Aprendiz de TI",
+            "exp4.desc": "Suporte à infraestrutura interna de tecnologia da informação, auxiliando na manutenção de sistemas, equipamentos e ambientes corporativos.<br><br>Experiência inicial com rotinas de TI empresarial.",
+            "exp5.role": "Auxiliar de TI / Suporte Técnico",
+            "exp5.desc": "Atuação em suporte técnico e infraestrutura de TI em ambiente corporativo, realizando manutenção de computadores, diagnóstico de falhas em equipamentos e suporte à rede interna, garantindo o funcionamento adequado dos sistemas utilizados nas operações da empresa.<br>--<br>Suporte técnico a clientes na utilização de sistemas de automação e gestão empresarial. Atuação no apoio à geração e validação de arquivos fiscais, orientação de usuários quanto à usabilidade do sistema e resolução de dúvidas operacionais. Também realizava análises e ajustes pontuais em banco de dados Firebird para correção de inconsistências e suporte a processos internos do sistema.",
+            "certs.title": "Credenciais<br><em>formais.</em>",
+            "certs.desc": "Certificações que validam meu conhecimento técnico em plataformas e práticas do mercado.",
+            "cert1.name": "Design",
+            "cert2.name": "Aprendizagem Profissional de Qualificação em Desenvolvimento de Softwares",
+            "cert3.name": "Gew - Geração WEB",
+            "cert4.name": "Hdw - Montagem e Manutenção",
+            "contact.title": "Vamos criar algo<br><em>incrível juntos?</em>",
+            "contact.email": "Enviar e-mail →",
+            "footer.cv": "CV em PDF",
+            "footer.location": "Chapecó, Brasil"
+        },
+        en: {
+            "nav.about": "About",
+            "nav.projects": "Projects",
+            "nav.experience": "Experience",
+            "nav.certs": "Certificates",
+            "nav.contact": "Contact →",
+            "about.title": "Developer with a<br><em>designer's eye.</em>",
+            "about.p1": "I'm Gabriel Korb, a developer focused on web systems and applications. My unique combination of technical skills and visual sensibility allows me to build interfaces that don't just work — they're ones people actually enjoy using.",
+            "about.p2": "I work with Angular, Node.js, PHP and databases, always paying close attention to the end-user experience. Every line of code reflects an intentional design decision.",
+            "about.stat1": "Years of experience in technology",
+            "about.stat2": "Degree in progress",
+            "about.stat3": "Complete technical certifications",
+            "about.stat4": "Technologies mastered",
+            "projects.title": "Selected<br><em>works.</em>",
+            "proj1.tag": "Interface · Calendar · Productivity",
+            "proj1.name": "Google Calendar-style Scheduler",
+            "proj1.desc": "Interactive scheduling system with daily, weekly and monthly views. Responsive interface built from scratch with a focus on usability and immediate visual feedback.",
+            "proj2.tag": "Application · Tracking",
+            "proj2.name": "Tracking Application",
+            "proj2.desc": "Product tracking application for Eko'7 company along with other customer-facing features",
+            "proj3.tag": "Interface · Repository · Productivity",
+            "proj3.name": "JSON Repository System",
+            "proj3.desc": "Tool to automate internal flows and processes via external API integration.",
+            "proj4.tag": "Interface · Waste · Management System",
+            "proj4.name": "Waste Management System - Cloud",
+            "proj4.desc": "I participated in a project for a system called \"Cloud\" which aims to manage waste through tracking and other features.",
+            "locked.tip": "Not available for viewing",
+            "exp.title": "Professional experience<br><em>in practice.</em>",
+            "exp.current": "Present",
+            "exp1.role": "Technical Support — Opa! Suite",
+            "exp1.desc": "Specialized technical support for Opa! Suite clients, helping identify and resolve issues in an Omnichannel system.<br><br>Working on error analysis, operational failure diagnosis and continuous improvement of support flows through documentation and process optimization.",
+            "exp2.role": "Programming Support Assistant",
+            "exp2.desc": "Participation in the development and maintenance of management systems called Cloud, focused on waste control and environmental processes.<br><br>Supporting the development team in implementing features, testing and improvements in corporate applications.",
+            "exp3.role": "IT Assistant",
+            "exp3.desc": "Technical support and IT infrastructure in an industrial environment, performing computer maintenance, equipment failure diagnosis and support for the internal network and factory systems.<br><br>Technical support to users and clients regarding the use of the company's system. Working on problem diagnosis, user guidance and follow-up.",
+            "exp4.role": "IT Apprentice",
+            "exp4.desc": "Support for internal information technology infrastructure, assisting in the maintenance of systems, equipment and corporate environments.<br><br>Initial experience with corporate IT routines.",
+            "exp5.role": "IT Assistant / Technical Support",
+            "exp5.desc": "Technical support and IT infrastructure in a corporate environment, performing computer maintenance, equipment failure diagnosis and internal network support, ensuring proper operation of systems used in the company's operations.<br>--<br>Technical support to clients using automation and business management systems. Assistance in generating and validating tax files, user guidance on system usability and operational query resolution. Also performed analysis and adjustments in Firebird databases to correct inconsistencies and support internal system processes.",
+            "certs.title": "Formal<br><em>credentials.</em>",
+            "certs.desc": "Certifications that validate my technical knowledge in industry platforms and practices.",
+            "cert1.name": "Design",
+            "cert2.name": "Professional Qualification in Software Development",
+            "cert3.name": "Gew - Web Generation",
+            "cert4.name": "Hdw - Assembly and Maintenance",
+            "contact.title": "Let's create something<br><em>incredible together?</em>",
+            "contact.email": "Send an email →",
+            "footer.cv": "CV in PDF",
+            "footer.location": "Chapecó, Brazil"
+        },
+        es: {
+            "nav.about": "Sobre mí",
+            "nav.projects": "Proyectos",
+            "nav.experience": "Experiencia",
+            "nav.certs": "Certificados",
+            "nav.contact": "Contacto →",
+            "about.title": "Desarrollador con<br>visión de <em>diseñador.</em>",
+            "about.p1": "Soy Gabriel Korb, desarrollador enfocado en sistemas web y aplicaciones. Mi combinación única de habilidades técnicas y sensibilidad visual me permite crear interfaces que no solo funcionan — sino que a las personas realmente les gusta usar.",
+            "about.p2": "Trabajo con Angular, Node.js, PHP y bases de datos, siempre prestando atención al detalle de la experiencia del usuario final. Cada línea de código refleja una decisión de diseño intencional.",
+            "about.stat1": "Años de experiencia en tecnología",
+            "about.stat2": "Carrera universitaria en curso",
+            "about.stat3": "Certificaciones técnicas completas",
+            "about.stat4": "Tecnologías dominadas",
+            "projects.title": "Trabajos<br><em>seleccionados.</em>",
+            "proj1.tag": "Interfaz · Agenda · Productividad",
+            "proj1.name": "Agenda estilo Google Calendar",
+            "proj1.desc": "Sistema de agenda interactiva con vistas diarias, semanales y mensuales. Interfaz responsiva construida desde cero con foco en usabilidad y feedback visual inmediato.",
+            "proj2.tag": "Aplicación · Rastreo",
+            "proj2.name": "Aplicación de rastreo",
+            "proj2.desc": "Aplicación de seguimiento de productos de la empresa Eko'7 junto con otras funcionalidades orientadas al cliente",
+            "proj3.tag": "Interfaz · Repositorio · Productividad",
+            "proj3.name": "Sistema de repositorio para JSON",
+            "proj3.desc": "Herramienta para automatizar flujos y procesos internos mediante integración de APIs externas.",
+            "proj4.tag": "Interfaz · Residuos · Sistema de gestión",
+            "proj4.name": "Sistema de gestión de residuos - Cloud",
+            "proj4.desc": "Participé en un proyecto de un sistema llamado \"Cloud\" cuyo propósito es gestionar residuos mediante rastreo y otras funciones.",
+            "locked.tip": "No disponible para visualización",
+            "exp.title": "Experiencia profesional<br><em>en la práctica.</em>",
+            "exp.current": "Actual",
+            "exp1.role": "Soporte Técnico — Opa! Suite",
+            "exp1.desc": "Atención técnica especializada para clientes de Opa! Suite, ayudando en la identificación y resolución de problemas en sistemas Omnichannel.<br><br>Análisis de errores, diagnóstico de fallas operativas y mejora continua de los flujos de soporte a través de documentación y optimización de procesos.",
+            "exp2.role": "Asistente de Apoyo a la Programación",
+            "exp2.desc": "Participación en el desarrollo y mantenimiento de sistemas de gestión llamados Cloud, orientados al control de residuos y procesos ambientales.<br><br>Apoyo al equipo de desarrollo en la implementación de funcionalidades, pruebas y mejoras en aplicaciones corporativas.",
+            "exp3.role": "Auxiliar de TI",
+            "exp3.desc": "Soporte técnico e infraestructura de TI en un entorno industrial, realizando mantenimiento de computadoras, diagnóstico de fallas en equipos y soporte a la red interna y sistemas utilizados en la fábrica.<br><br>Soporte técnico a usuarios y clientes en relación con el uso del sistema de la empresa. Diagnóstico de problemas, orientación de usuarios y seguimiento.",
+            "exp4.role": "Aprendiz de TI",
+            "exp4.desc": "Soporte a la infraestructura interna de tecnología de la información, asistiendo en el mantenimiento de sistemas, equipos y entornos corporativos.<br><br>Experiencia inicial con rutinas de TI empresarial.",
+            "exp5.role": "Auxiliar de TI / Soporte Técnico",
+            "exp5.desc": "Soporte técnico e infraestructura de TI en entorno corporativo, realizando mantenimiento de computadoras, diagnóstico de fallas y soporte a la red interna, garantizando el funcionamiento adecuado de los sistemas.<br>--<br>Soporte técnico a clientes en la utilización de sistemas de automatización y gestión empresarial. Apoyo en la generación y validación de archivos fiscales, orientación a usuarios y resolución de dudas. También realizaba análisis y ajustes puntuales en base de datos Firebird para corrección de inconsistencias.",
+            "certs.title": "Credenciales<br><em>formales.</em>",
+            "certs.desc": "Certificaciones que validan mi conocimiento técnico en plataformas y prácticas del mercado.",
+            "cert1.name": "Diseño",
+            "cert2.name": "Aprendizaje Profesional de Calificación en Desarrollo de Software",
+            "cert3.name": "Gew - Generación WEB",
+            "cert4.name": "Hdw - Montaje y Mantenimiento",
+            "contact.title": "¿Creemos algo<br><em>increíble juntos?</em>",
+            "contact.email": "Enviar un correo →",
+            "footer.cv": "CV en PDF",
+            "footer.location": "Chapecó, Brasil"
+        },
+        zh: {
+            "nav.about": "关于",
+            "nav.projects": "项目",
+            "nav.experience": "工作经历",
+            "nav.certs": "证书",
+            "nav.contact": "联系我 →",
+            "about.title": "具有<em>设计师视角</em><br>的开发者",
+            "about.p1": "我是 Gabriel Korb，专注于 Web 系统和应用开发。我独特的技术能力与视觉敏感度的结合，让我能够打造不仅功能完善，更让用户真正喜爱使用的界面。",
+            "about.p2": "我使用 Angular、Node.js、PHP 和数据库进行开发，始终关注最终用户体验的细节。每一行代码都反映了有意识的设计决策。",
+            "about.stat1": "技术领域经验年数",
+            "about.stat2": "在读学位",
+            "about.stat3": "已完成技术认证",
+            "about.stat4": "掌握的技术",
+            "projects.title": "精选<br><em>作品。</em>",
+            "proj1.tag": "界面 · 日程 · 生产力",
+            "proj1.name": "Google Calendar 风格日程系统",
+            "proj1.desc": "具有日、周、月视图的交互式日程系统。从零构建的响应式界面，专注于可用性和即时视觉反馈。",
+            "proj2.tag": "应用程序 · 追踪",
+            "proj2.name": "追踪应用程序",
+            "proj2.desc": "Eko'7 公司的产品追踪应用，以及其他面向客户的功能",
+            "proj3.tag": "界面 · 仓库 · 生产力",
+            "proj3.name": "JSON 仓库系统",
+            "proj3.desc": "通过外部 API 集成自动化内部流程和工作流的工具。",
+            "proj4.tag": "界面 · 废物 · 管理系统",
+            "proj4.name": "废物管理系统 - Cloud",
+            "proj4.desc": "参与了一个名为 \"Cloud\" 的系统项目，旨在通过追踪和其他功能实现废物管理。",
+            "locked.tip": "不可预览",
+            "exp.title": "专业经历<br><em>实践中成长。</em>",
+            "exp.current": "至今",
+            "exp1.role": "技术支持 — Opa! Suite",
+            "exp1.desc": "为 Opa! Suite 客户提供专业技术支持，协助识别和解决全渠道系统中的问题。<br><br>负责错误分析、运营故障诊断，并通过文档编写和流程优化持续改进支持流程。",
+            "exp2.role": "编程辅助助理",
+            "exp2.desc": "参与名为 Cloud 的管理系统的开发和维护，专注于废物控制和环境流程。<br><br>协助开发团队在企业应用中实现功能、测试和改进。",
+            "exp3.role": "IT 助理",
+            "exp3.desc": "在工业环境中提供技术支持和 IT 基础设施服务，包括计算机维护、设备故障诊断以及对工厂内部网络和系统的支持。<br><br>为用户和客户提供公司系统使用方面的技术支持，包括问题诊断、用户指导和跟进。",
+            "exp4.role": "IT 学徒",
+            "exp4.desc": "支持内部信息技术基础设施，协助维护系统、设备和企业环境。<br><br>积累了企业 IT 日常工作的初步经验。",
+            "exp5.role": "IT 助理 / 技术支持",
+            "exp5.desc": "在企业环境中提供技术支持和 IT 基础设施服务，包括计算机维护、设备故障诊断和内部网络支持，确保公司运营系统正常运行。<br>--<br>为客户提供自动化和企业管理系统的使用技术支持，协助生成和验证财务文件，指导用户操作并解答疑问。同时对 Firebird 数据库进行分析和调整，修正不一致问题并支持内部系统流程。",
+            "certs.title": "正式<br><em>资质。</em>",
+            "certs.desc": "验证我在市场平台和实践中技术知识的认证。",
+            "cert1.name": "设计",
+            "cert2.name": "软件开发职业资格培训",
+            "cert3.name": "Gew - Web 开发",
+            "cert4.name": "Hdw - 组装与维护",
+            "contact.title": "让我们一起创造<br><em>令人惊叹的作品？</em>",
+            "contact.email": "发送邮件 →",
+            "footer.cv": "PDF 简历",
+            "footer.location": "巴西 沙佩科"
         }
+    };
 
-        document.addEventListener('mousemove', e => {
-            mx = e.clientX; my = e.clientY;
-            cursor.style.left = mx + 'px';
-            cursor.style.top = my + 'px';
-            updateCursorColor();
+    const langMeta = {
+        pt: { flag: '🇧🇷', code: 'PT', htmlLang: 'pt-BR' },
+        en: { flag: '🇺🇸', code: 'EN', htmlLang: 'en' },
+        es: { flag: '🇪🇸', code: 'ES', htmlLang: 'es' },
+        zh: { flag: '🇨🇳', code: 'ZH', htmlLang: 'zh' }
+    };
+
+    let currentLang = 'pt';
+
+    function applyTranslations(lang) {
+        const t = translations[lang];
+        if (!t) return;
+
+        // Plain text nodes
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (t[key] !== undefined) el.textContent = t[key];
         });
 
-        function animRing() {
-            rx += (mx - rx) * 0.14;
-            ry += (my - ry) * 0.14;
-            ring.style.left = rx + 'px';
-            ring.style.top = ry + 'px';
-            requestAnimationFrame(animRing);
-        }
-        animRing();
-
-        // SCROLL REVEAL
-        const reveals = document.querySelectorAll('.reveal');
-        const obs = new IntersectionObserver(entries => {
-            entries.forEach((e, i) => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    obs.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.12 });
-        reveals.forEach(el => obs.observe(el));
-
-        // NAV SCROLL
-        const nav = document.querySelector('nav');
-        window.addEventListener('scroll', () => {
-            nav.style.borderBottomColor = window.scrollY > 40 ? 'rgba(0,0,0,0.1)' : 'rgba(0,0,0,0.06)';
+        // HTML nodes (allow <br> and <em>)
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            if (t[key] !== undefined) el.innerHTML = t[key];
         });
+
+        // Tooltip data-tip
+        document.querySelectorAll('[data-i18n-tip]').forEach(el => {
+            const key = el.getAttribute('data-i18n-tip');
+            if (t[key] !== undefined) el.setAttribute('data-tip', t[key]);
+        });
+
+        // Update html lang attribute
+        document.documentElement.lang = langMeta[lang].htmlLang;
+    }
+
+    function setLanguage(lang) {
+        if (!translations[lang] || lang === currentLang) return;
+        currentLang = lang;
+
+        // Update button indicator
+        document.getElementById('currentFlag').textContent = langMeta[lang].flag;
+        document.getElementById('currentCode').textContent = langMeta[lang].code;
+
+        // Update active state on options
+        document.querySelectorAll('.lang-option').forEach(opt => {
+            opt.classList.toggle('active', opt.dataset.lang === lang);
+        });
+
+        // Animate out → translate → animate in
+        document.body.classList.add('lang-transitioning');
+        setTimeout(() => {
+            applyTranslations(lang);
+            document.body.classList.remove('lang-transitioning');
+        }, 180);
+
+        closeDropdown();
+        localStorage.setItem('preferredLang', lang);
+    }
+
+    // ─── DROPDOWN LOGIC ──────────────────────────────────────────────────────────
+    const langBtn = document.getElementById('langBtn');
+    const langDropdown = document.getElementById('langDropdown');
+    const langCaret = document.getElementById('langCaret');
+    let dropdownOpen = false;
+
+    function openDropdown() {
+        dropdownOpen = true;
+        langDropdown.classList.add('open');
+        langCaret.style.transform = 'rotate(180deg)';
+    }
+
+    function closeDropdown() {
+        dropdownOpen = false;
+        langDropdown.classList.remove('open');
+        langCaret.style.transform = 'rotate(0deg)';
+    }
+
+    langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdownOpen ? closeDropdown() : openDropdown();
+    });
+
+    document.querySelectorAll('.lang-option').forEach(btn => {
+        btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!document.getElementById('langSelector').contains(e.target)) {
+            closeDropdown();
+        }
+    });
+
+    // Restore saved language
+    const saved = localStorage.getItem('preferredLang');
+    if (saved && translations[saved]) {
+        currentLang = saved;
+        document.getElementById('currentFlag').textContent = langMeta[saved].flag;
+        document.getElementById('currentCode').textContent = langMeta[saved].code;
+        document.querySelectorAll('.lang-option').forEach(opt => {
+            opt.classList.toggle('active', opt.dataset.lang === saved);
+        });
+        applyTranslations(saved);
+    }
+
+    // ─── CURSOR ──────────────────────────────────────────────────────────────────
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    function updateCursorColor() {
+        let el = document.elementFromPoint(mx, my);
+        if (!el) return;
+        if (el.tagName === 'IMG') {
+            cursor.style.background = '#fafafa';
+            ring.style.borderColor = 'rgba(250,250,250,0.35)';
+            return;
+        }
+        while (el && window.getComputedStyle(el).backgroundColor === 'rgba(0, 0, 0, 0)') {
+            el = el.parentElement;
+        }
+        if (!el) return;
+        const bg = window.getComputedStyle(el).backgroundColor;
+        const rgb = bg.match(/\d+/g);
+        if (!rgb) return;
+        const brightness = (+rgb[0] * 299 + +rgb[1] * 587 + +rgb[2] * 114) / 1000;
+        const onDark = brightness < 128;
+        cursor.style.background = onDark ? '#fafafa' : '#0a0a0a';
+        ring.style.borderColor = onDark ? 'rgba(250,250,250,0.35)' : 'rgba(10,10,10,0.3)';
+    }
+
+    document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        cursor.style.left = mx + 'px';
+        cursor.style.top = my + 'px';
+        updateCursorColor();
+    });
+
+    function animRing() {
+        rx += (mx - rx) * 0.14;
+        ry += (my - ry) * 0.14;
+        ring.style.left = rx + 'px';
+        ring.style.top = ry + 'px';
+        requestAnimationFrame(animRing);
+    }
+    animRing();
+
+    // SCROLL REVEAL
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                obs.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => obs.observe(el));
+
+    // NAV SCROLL
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+        nav.style.borderBottomColor = window.scrollY > 40 ? 'rgba(0,0,0,0.1)' : 'rgba(0,0,0,0.06)';
+    });
     </script>
 
 </body>
